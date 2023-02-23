@@ -1,0 +1,201 @@
+:root {
+    --color1: #234680;
+    --color2: #ffffff;
+    --color3: #000000;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.nav {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5px 10%;
+    position: fixed;
+    font-size: 20px;
+    z-index: 4;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transition: all 0.9s;
+}
+
+
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+
+.logo img {
+    height: 65px;
+    transition: all 0.9s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+    transition: all 0.9s;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.nav__links li:hover {
+    transform: scale(1.2);
+    color: var(--color1);
+}
+
+
+.banner img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+
+.title {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h3 {
+    font-size: 50px;
+    color: var(--color1);
+}
+
+/* CARRERAS */
+.one,
+.two,
+.three {
+    width: 100%;
+    display: flex;
+}
+
+.software__img img {
+    height: 900px;
+    width: 60vw;
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.software__texts {
+    width: 40vw;
+    height: 900px;
+    background-color: var(--color1);
+    color: var(--color2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.software__texts h3 {
+    font-size: 30px;
+    margin: 40px 20px;
+}
+
+.software__texts p {
+    margin: 40px 30px;
+    font-size: 20px;
+}
+
+.software__texts h4 {
+    margin: 40px 20px;
+    font-size: 30px;
+}
+
+.about {
+    margin: 150px;
+}
+
+.about h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.about p {
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.about p iframe {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+
+.footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.footer h3 {
+    text-align: center;
+    color: var(--color2);
+    margin: 50px;
+    font-size: 30px;
+}
+
+input {
+    height: 40px;
+    width: 200px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 20px;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+.footer .social {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bx:hover {
+    transform: scale(1.2);
+}
+
+.bx {
+    font-size: 50px;
+    color: var(--color2);
+}
